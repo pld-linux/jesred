@@ -8,7 +8,7 @@ Group:		Networking/Daemons
 Source0:	http://ivs.cs.uni-magdeburg.de/~elkner/webtools/src/%{name}-%{version}.tar.gz
 Source1:	%{name}.conf
 Patch0:		%{name}-DEFAULT_PATH.patch
-URL:		http://ivs.cs.uni-magdeburg.de/~elkner/webtools/jesred/
+URL:		http://www.linofee.org/~elkner/webtools/jesred/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	squid
 
