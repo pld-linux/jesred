@@ -5,8 +5,6 @@ Version:	1.2pl1
 Release:	1
 License:	GPL
 Group:		Networking/Daemons
-Group(de):	Netzwerkwesen/Server
-Group(pl):	Sieciowe/Serwery
 Source0:	http://ivs.cs.uni-magdeburg.de/~elkner/webtools/src/%{name}-%{version}.tar.gz
 Source1:	%{name}.conf
 Patch0:		%{name}-DEFAULT_PATH.patch
