@@ -1,0 +1,10 @@
+--- jesred-1.2pl1/path.h.orig	Sat Jul 25 01:03:13 1998
++++ jesred-1.2pl1/path.h	Fri Jul 27 17:04:33 2001
+@@ -7,6 +7,6 @@
+ 
+ /* change this to the path, which contains your jesred.conf */
+ 
+-#define DEFAULT_PATH "/local/squid/etc"
++#define DEFAULT_PATH "/etc/jesred"
+ 
+ #endif
