@@ -34,8 +34,6 @@ install jesred		$RPM_BUILD_ROOT%{_bindir}
 install etc/redirect.*	$RPM_BUILD_ROOT%{_sysconfdir}
 install %{SOURCE1}	$RPM_BUILD_ROOT%{_sysconfdir}
 
-gzip -9nf README
-
 %post
 echo "WARNING !!! WARNING !!! WARNING !!! WARNING !!!"
 echo
@@ -47,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %attr(750,root,squid) %dir %{_sysconfdir}
 %attr(640,root,squid) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
