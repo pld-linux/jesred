@@ -1,4 +1,4 @@
-# $Revision: 1.1 $
+# $Revision: 1.2 $
 Summary:	Filter, redirector and access controller plugin for Squid. 
 Name:		jesred
 Version:	1.2pl1
@@ -9,6 +9,7 @@ Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
 Source0:	http://ivs.cs.uni-magdeburg.de/~elkner/webtools/src/%{name}-%{version}.tar.gz
 Source1:	%{name}.conf
+Patch0:		%{name}-DEFAULT_PATH.patch
 URL:		http://ivs.cs.uni-magdeburg.de/~elkner/webtools/jesred/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	squid
@@ -20,8 +21,9 @@ Redirector for squid proxy
 
 %prep
 %setup -q
+%patch0 -p1
 %build
-%{__make} CFLAGS="%{rpmcflags} -I." DEFS="-DUSE_ACCEL -DDEFAULT_PATH=\"%{_sysconfdir}\"" XTRA_LIBS=""
+%{__make} CFLAGS="%{rpmcflags} -I." DEFS="-DUSE_ACCEL" XTRA_LIBS=""
 
 %install
 rm -rf $RPM_BUILD_ROOT
