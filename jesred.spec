@@ -1,4 +1,5 @@
-Summary:	Filter, redirector and access controller plugin for Squid. 
+Summary:	Filter, redirector and access controller plugin for Squid
+Summary(pl):	Wtyczka do filtrowania, przekierowywania i kontroli dostêpu dla Squida
 Name:		jesred
 Version:	1.2pl1
 Release:	1
@@ -16,7 +17,10 @@ Requires:	squid
 %define		_sysconfdir	/etc/%{name}
 
 %description
-Redirector for squid proxy
+Redirector for squid proxy.
+
+%description -l pl
+Wtyczka przekierowuj±ca dla Squida.
 
 %prep
 %setup -q
@@ -26,8 +30,6 @@ Redirector for squid proxy
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}}
 
 install jesred		$RPM_BUILD_ROOT%{_bindir}
@@ -38,7 +40,7 @@ gzip -9nf README
 
 %post
 echo "WARNING !!! WARNING !!! WARNING !!! WARNING !!!"
-echo ""
+echo
 echo "Modify the following line in the /etc/squid/squid.conf file:"
 echo "redirect_program /usr/bin/jesred"
 
