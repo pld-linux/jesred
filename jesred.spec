@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://ivs.cs.uni-magdeburg.de/~elkner/webtools/src/%{name}-%{version}.tar.gz
+# Source0-md5:	8d7009e0700996dbc28540d1a8f7c36d
 Source1:	%{name}.conf
 Patch0:		%{name}-DEFAULT_PATH.patch
 URL:		http://www.linofee.org/~elkner/webtools/jesred/
