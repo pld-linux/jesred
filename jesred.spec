@@ -1,4 +1,3 @@
-# $Revision: 1.2 $
 Summary:	Filter, redirector and access controller plugin for Squid. 
 Name:		jesred
 Version:	1.2pl1
