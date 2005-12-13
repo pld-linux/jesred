@@ -49,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %attr(755,root,root) %{_bindir}/*
 %attr(750,root,squid) %dir %{_sysconfdir}
-%attr(640,root,squid) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
+%attr(640,root,squid) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
