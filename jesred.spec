@@ -1,5 +1,5 @@
 Summary:	Filter, redirector and access controller plugin for Squid
-Summary(pl.UTF-8):   Wtyczka do filtrowania, przekierowywania i kontroli dostępu dla Squida
+Summary(pl.UTF-8):	Wtyczka do filtrowania, przekierowywania i kontroli dostępu dla Squida
 Name:		jesred
 Version:	1.2pl1
 Release:	0.1
